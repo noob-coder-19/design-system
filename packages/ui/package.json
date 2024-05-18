@@ -1,6 +1,6 @@
 {
   "name": "@noob-coder-19/design-system",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "sideEffects": false,
   "license": "MIT",
   "exports": {
