@@ -11,7 +11,7 @@
     "lint": "eslint ./stories/*.stories.tsx --max-warnings 0"
   },
   "dependencies": {
-    "@noob-coder-19/design-system": "workspace:*",
+    "@noobcoder19/design-system": "workspace:*",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
