@@ -1,0 +1,21 @@
+{
+  "name": "@noobcoder19/foundation",
+  "version": "0.0.1",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build-tokens": "style-dictionary build --config sd.config.js && echo \"\nexport default _styleDictionary;\n\" >> ./src/tokens/js/tokens.js",
+    "dev": "style-dictionary watch --config sd.config.js",
+    "build": "pnpm build-tokens && tsup",
+    "clean": "style-dictionary clean"
+  },
+  "optionalDependencies": {
+    "@repo/typescript-config": "workspace:*"
+  },
+  "devDependencies": {
+    "style-dictionary": "^4.1.3",
+    "tsup": "^8.0.2",
+    "typescript": "^5.3.3"
+  }
+}
