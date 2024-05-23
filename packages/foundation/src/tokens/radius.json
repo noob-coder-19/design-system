@@ -1,0 +1,16 @@
+{
+  "radius": {
+    "none": {
+      "value": "0"
+    },
+    "small": {
+      "value": "8px"
+    },
+    "large": {
+      "value": "20px"
+    },
+    "infinity": {
+      "value": "9999px"
+    }
+  }
+}
