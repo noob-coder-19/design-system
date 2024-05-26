@@ -6,7 +6,7 @@
   "types": "./dist/index.d.ts",
   "scripts": {
     "build-tokens": "style-dictionary build --config sd.config.js && echo \"\nexport default _styleDictionary;\n\" >> ./src/tokens/js/tokens.js",
-    "dev": "style-dictionary watch --config sd.config.js",
+    "dev": "pnpm build-tokens && tsup --watch",
     "build": "pnpm build-tokens && tsup",
     "clean": "style-dictionary clean"
   },
