@@ -32,6 +32,9 @@ jobs:
       - name: Check lint
         run: pnpm lint
 
+      - name: Build
+        run: pnpm build
+
       - name: Create Release Pull Request or Publish to npm
         id: changesets
         uses: changesets/action@v1
