@@ -18,14 +18,15 @@
   },
   "devDependencies": {
     "@repo/eslint-config": "workspace:*",
+    "@repo/typescript-config": "workspace:*",
     "@types/react": "^18.2.61",
     "@types/react-dom": "^18.2.19",
     "eslint": "^8.57.0",
-    "@repo/typescript-config": "workspace:*",
     "tsup": "^8.0.2",
     "typescript": "^5.3.3"
   },
   "dependencies": {
+    "@noobcoder19/foundation": "^2.0.0",
     "react": "^18.2.0"
   },
   "publishConfig": {

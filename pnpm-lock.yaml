@@ -108,6 +108,9 @@ importers:
 
   packages/ui:
     dependencies:
+      '@noobcoder19/foundation':
+        specifier: ^2.0.0
+        version: link:../foundation
       react:
         specifier: ^18.2.0
         version: 18.3.1
