@@ -17,9 +17,12 @@
   },
   "devDependencies": {
     "@repo/eslint-config": "workspace:*",
+    "@storybook/addon-a11y": "8.2.6",
     "@storybook/addon-actions": "^8.2.6",
     "@storybook/addon-essentials": "^8.2.6",
+    "@storybook/addon-interactions": "8.2.6",
     "@storybook/addon-links": "^8.2.6",
+    "@storybook/addon-storysource": "8.2.6",
     "@storybook/react": "^8.2.6",
     "@storybook/react-vite": "^8.2.6",
     "@vitejs/plugin-react": "^4.2.1",
