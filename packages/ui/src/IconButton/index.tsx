@@ -8,6 +8,8 @@ const IconButtonSyled = styled.button<IconButtonProps>`
   cursor: pointer;
   padding: ${tokens.spacings[4].value} ${tokens.spacings[4].value};
 
+  display: flex;
+
   border-radius: ${(props) => tokens.radius[props.radius || 'infinity'].value};
   color: ${tokens.colors.neutral.white.value};
   background-color: ${(props) =>
