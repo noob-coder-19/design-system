@@ -19,6 +19,11 @@ const IconButtonSyled = styled.button<IconButtonProps>`
   color: ${tokens.colors.neutral.white.value};
   background-color: ${(props) =>
     tokens.colors[props.color || 'primary'][500].value};
+
+  &:active {
+    background-color: ${(props) =>
+      tokens.colors[props.color || 'primary'][800].value};
+  }
 `;
 
 export const IconButton = forwardRef<HTMLButtonElement, IconButtonProps>(
