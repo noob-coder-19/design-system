@@ -10,6 +10,11 @@ const IconButtonSyled = styled.button<IconButtonProps>`
 
   display: flex;
 
+  &:disabled {
+    cursor: not-allowed;
+    opacity: 40%;
+  }
+
   border-radius: ${(props) => tokens.radius[props.radius || 'infinity'].value};
   color: ${tokens.colors.neutral.white.value};
   background-color: ${(props) =>
