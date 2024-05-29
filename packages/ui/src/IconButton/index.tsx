@@ -20,6 +20,10 @@ const IconButtonSyled = styled.button<IconButtonProps>`
   background-color: ${(props) =>
     tokens.colors[props.color || 'primary'][500].value};
 
+  &:hover {
+    background-color: ${(props) =>
+      tokens.colors[props.color || 'primary'][700].value};
+  }
   &:active {
     background-color: ${(props) =>
       tokens.colors[props.color || 'primary'][800].value};
