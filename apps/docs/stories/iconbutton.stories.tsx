@@ -3,6 +3,16 @@ import type { Meta, StoryObj } from '@storybook/react';
 
 const meta: Meta<typeof IconButton> = {
   component: IconButton,
+  argTypes: {
+    type: {
+      control: { type: 'radio' },
+      options: ['button', 'submit', 'reset'],
+    },
+    color: {
+      control: { type: 'radio' },
+      options: ['primary', 'success', 'warning', 'danger'],
+    },
+  },
 };
 
 export default meta;
