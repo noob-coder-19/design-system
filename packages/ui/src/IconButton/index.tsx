@@ -16,6 +16,7 @@ const IconButtonSyled = styled.button<IconButtonProps>`
   }
 
   border-radius: ${(props) => tokens.radius[props.radius || 'infinity'].value};
+  transition: ${tokens.animations.default.value};
   color: ${tokens.colors.neutral.white.value};
   background-color: ${(props) =>
     tokens.colors[props.color || 'primary'][500].value};
