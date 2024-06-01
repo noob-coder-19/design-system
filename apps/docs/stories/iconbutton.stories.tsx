@@ -19,6 +19,7 @@ const meta: Meta<typeof IconButton> = {
     ),
     onClick: (event) => {
       // Handle the click event appropriately
+      // eslint-disable-next-line no-alert -- This is just an example of how you might handle the event
       alert(`event.clientX: ${event.clientX} event.clientY: ${event.clientY}`);
     },
   },
