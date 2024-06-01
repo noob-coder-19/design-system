@@ -17,6 +17,10 @@ const meta: Meta<typeof IconButton> = {
         />
       </svg>
     ),
+    onClick: (event) => {
+      // Handle the click event appropriately
+      alert(`event.clientX: ${event.clientX} event.clientY: ${event.clientY}`);
+    },
   },
   argTypes: {
     type: {
