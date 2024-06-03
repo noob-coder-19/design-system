@@ -9,6 +9,9 @@ const ButtonSyled = styled.button<ButtonProps>`
   padding: ${tokens.spacings[8].value} ${tokens.spacings[16].value};
 
   border-radius: ${(props) => tokens.radius[props.radius || 'small'].value};
+  color: ${tokens.colors.neutral.white.value};
+  background-color: ${(props) =>
+    tokens.colors[props.color || 'primary'][500].value};
 `;
 
 const Button = forwardRef<HTMLButtonElement, ButtonProps>(
