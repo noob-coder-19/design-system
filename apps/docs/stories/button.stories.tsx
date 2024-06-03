@@ -19,3 +19,10 @@ export const Default: Story = {
     children: 'Click me',
   },
 };
+
+export const CustomColor: Story = {
+  args: {
+    children: 'Click me',
+    color: 'success',
+  },
+};
