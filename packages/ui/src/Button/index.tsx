@@ -12,6 +12,11 @@ const ButtonSyled = styled.button<ButtonProps>`
   color: ${tokens.colors.neutral.white.value};
   background-color: ${(props) =>
     tokens.colors[props.color || 'primary'][500].value};
+
+  &:hover {
+    background-color: ${(props) =>
+      tokens.colors[props.color || 'primary'][700].value};
+  }
 `;
 
 const Button = forwardRef<HTMLButtonElement, ButtonProps>(
