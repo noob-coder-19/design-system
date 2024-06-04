@@ -26,3 +26,10 @@ export const CustomColor: Story = {
     color: 'success',
   },
 };
+
+export const Disabled: Story = {
+  args: {
+    children: 'Click me',
+    disabled: true,
+  },
+};
