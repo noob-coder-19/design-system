@@ -3,6 +3,13 @@ import type { Meta, StoryObj } from '@storybook/react';
 
 const meta: Meta<typeof Button> = {
   component: Button,
+  args: {
+    onClick: (event) => {
+      // Handle the click event appropriately
+      // eslint-disable-next-line no-alert -- This is just an example of how you might handle the event
+      alert(`event.clientX: ${event.clientX} event.clientY: ${event.clientY}`);
+    },
+  },
   argTypes: {
     type: {
       control: { type: 'radio' },
