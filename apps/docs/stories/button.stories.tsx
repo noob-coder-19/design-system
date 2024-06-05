@@ -4,6 +4,7 @@ import type { Meta, StoryObj } from '@storybook/react';
 const meta: Meta<typeof Button> = {
   component: Button,
   args: {
+    children: 'Click me',
     onClick: (event) => {
       // Handle the click event appropriately
       // eslint-disable-next-line no-alert -- This is just an example of how you might handle the event
@@ -32,28 +33,23 @@ type Story = StoryObj<typeof Button>;
  * to learn how to use render functions.
  */
 export const Default: Story = {
-  args: {
-    children: 'Click me',
-  },
+  args: {},
 };
 
 export const CustomColor: Story = {
   args: {
-    children: 'Click me',
     color: 'success',
   },
 };
 
 export const Disabled: Story = {
   args: {
-    children: 'Click me',
     disabled: true,
   },
 };
 
 export const Loading: Story = {
   args: {
-    children: 'Click me',
     loading: true,
   },
 };
