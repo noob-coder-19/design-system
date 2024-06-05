@@ -33,3 +33,10 @@ export const Disabled: Story = {
     disabled: true,
   },
 };
+
+export const Loading: Story = {
+  args: {
+    children: 'Click me',
+    loading: true,
+  },
+};
