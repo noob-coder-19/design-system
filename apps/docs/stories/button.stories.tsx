@@ -8,6 +8,10 @@ const meta: Meta<typeof Button> = {
       control: { type: 'radio' },
       options: ['button', 'submit', 'reset'],
     },
+    color: {
+      control: { type: 'radio' },
+      options: ['primary', 'success', 'warning', 'danger'],
+    },
   },
 };
 
