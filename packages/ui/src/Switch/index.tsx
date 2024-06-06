@@ -75,17 +75,17 @@ const Switch = forwardRef<HTMLDivElement, SwitchProps>(
       controlledChecked || defaultChecked || false,
     );
 
-    const toggleChecked = (new_checked?: boolean) => {
+    const toggleChecked = (newChecked?: boolean) => {
       if (disabled) {
         return;
       }
 
-      if (new_checked === undefined) {
-        setchecked((old_checked) => !old_checked);
+      if (newChecked === undefined) {
+        setchecked((oldChecked) => !oldChecked);
         return;
       }
 
-      setchecked(new_checked);
+      setchecked(newChecked);
     };
 
     const handleInputOnChange = (
