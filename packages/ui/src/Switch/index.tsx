@@ -75,7 +75,7 @@ const Switch = forwardRef<HTMLDivElement, SwitchProps>(
       controlledChecked || defaultChecked || false,
     );
 
-    const toggleChecked = (newChecked?: boolean) => {
+    const toggleChecked = (newChecked?: boolean): void => {
       if (disabled) {
         return;
       }
@@ -90,7 +90,7 @@ const Switch = forwardRef<HTMLDivElement, SwitchProps>(
 
     const handleInputOnChange = (
       event: React.ChangeEvent<HTMLInputElement>,
-    ) => {
+    ): void => {
       if (disabled) {
         return;
       }
