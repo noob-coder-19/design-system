@@ -20,3 +20,19 @@ export const Default: Story = {
     id: 'switch',
   },
 };
+
+export const Checked: Story = {
+  args: {
+    'aria-label': 'Switch',
+    id: 'switch',
+    defaultChecked: true,
+  },
+};
+
+export const Unchecked: Story = {
+  args: {
+    'aria-label': 'Switch',
+    id: 'switch',
+    defaultChecked: false,
+  },
+};
