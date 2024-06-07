@@ -71,7 +71,7 @@ const Switch = forwardRef<HTMLDivElement, SwitchProps>(
     ref,
   ) => {
     const inputRef = useRef<HTMLInputElement>(null);
-    const [checked, setchecked] = useState(
+    const [checked, setChecked] = useState(
       controlledChecked || defaultChecked || false,
     );
 
@@ -81,11 +81,11 @@ const Switch = forwardRef<HTMLDivElement, SwitchProps>(
       }
 
       if (newChecked === undefined) {
-        setchecked((oldChecked) => !oldChecked);
+        setChecked((oldChecked) => !oldChecked);
         return;
       }
 
-      setchecked(newChecked);
+      setChecked(newChecked);
     };
 
     const handleInputOnChange = (
