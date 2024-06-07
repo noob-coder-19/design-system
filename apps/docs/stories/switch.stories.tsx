@@ -36,3 +36,9 @@ export const Unchecked: Story = {
     defaultChecked: false,
   },
 };
+
+export const CustomColor: Story = {
+  args: {
+    color: 'success',
+  },
+};
