@@ -39,18 +39,24 @@ export const Unchecked: Story = {
 
 export const ControlledChecked: Story = {
   args: {
+    'aria-label': 'Switch',
+    id: 'switch',
     checked: true,
   },
 };
 
 export const ControlledUnchecked: Story = {
   args: {
+    'aria-label': 'Switch',
+    id: 'switch',
     checked: false,
   },
 };
 
 export const DisabledChecked: Story = {
   args: {
+    'aria-label': 'Switch',
+    id: 'switch',
     defaultChecked: true,
     disabled: true,
   },
@@ -58,6 +64,8 @@ export const DisabledChecked: Story = {
 
 export const DisabledUnchecked: Story = {
   args: {
+    'aria-label': 'Switch',
+    id: 'switch',
     defaultChecked: false,
     disabled: true,
   },
@@ -65,6 +73,8 @@ export const DisabledUnchecked: Story = {
 
 export const CustomColor: Story = {
   args: {
+    'aria-label': 'Switch',
+    id: 'switch',
     color: 'success',
   },
 };
