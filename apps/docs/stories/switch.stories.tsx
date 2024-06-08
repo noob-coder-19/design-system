@@ -37,6 +37,12 @@ export const Unchecked: Story = {
   },
 };
 
+export const ControlledChecked: Story = {
+  args: {
+    checked: true,
+  },
+};
+
 export const CustomColor: Story = {
   args: {
     color: 'success',
