@@ -49,6 +49,20 @@ export const ControlledUnchecked: Story = {
   },
 };
 
+export const DisabledChecked: Story = {
+  args: {
+    defaultChecked: true,
+    disabled: true,
+  },
+};
+
+export const DisabledUnchecked: Story = {
+  args: {
+    defaultChecked: false,
+    disabled: true,
+  },
+};
+
 export const CustomColor: Story = {
   args: {
     color: 'success',
