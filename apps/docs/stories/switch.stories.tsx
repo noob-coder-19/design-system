@@ -4,6 +4,8 @@ import type { Meta, StoryObj } from '@storybook/react';
 const meta: Meta<typeof Switch> = {
   component: Switch,
   args: {
+    'aria-label': 'Switch',
+    id: 'switch',
     onChange: (event) => {
       // Handle the click event appropriately
       // eslint-disable-next-line no-alert -- This is just an example of how you might handle the event
@@ -22,48 +24,35 @@ type Story = StoryObj<typeof Switch>;
  * to learn how to use render functions.
  */
 export const Default: Story = {
-  args: {
-    'aria-label': 'Switch',
-    id: 'switch',
-  },
+  args: {},
 };
 
 export const Checked: Story = {
   args: {
-    'aria-label': 'Switch',
-    id: 'switch',
     defaultChecked: true,
   },
 };
 
 export const Unchecked: Story = {
   args: {
-    'aria-label': 'Switch',
-    id: 'switch',
     defaultChecked: false,
   },
 };
 
 export const ControlledChecked: Story = {
   args: {
-    'aria-label': 'Switch',
-    id: 'switch',
     checked: true,
   },
 };
 
 export const ControlledUnchecked: Story = {
   args: {
-    'aria-label': 'Switch',
-    id: 'switch',
     checked: false,
   },
 };
 
 export const DisabledChecked: Story = {
   args: {
-    'aria-label': 'Switch',
-    id: 'switch',
     defaultChecked: true,
     disabled: true,
   },
@@ -71,8 +60,6 @@ export const DisabledChecked: Story = {
 
 export const DisabledUnchecked: Story = {
   args: {
-    'aria-label': 'Switch',
-    id: 'switch',
     defaultChecked: false,
     disabled: true,
   },
@@ -80,8 +67,6 @@ export const DisabledUnchecked: Story = {
 
 export const CustomColor: Story = {
   args: {
-    'aria-label': 'Switch',
-    id: 'switch',
     color: 'success',
   },
 };
