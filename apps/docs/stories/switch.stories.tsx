@@ -3,6 +3,13 @@ import type { Meta, StoryObj } from '@storybook/react';
 
 const meta: Meta<typeof Switch> = {
   component: Switch,
+  args: {
+    onChange: (event) => {
+      // Handle the click event appropriately
+      // eslint-disable-next-line no-alert -- This is just an example of how you might handle the event
+      alert(`event.timestamp: ${event.timeStamp} event.type: ${event.type}`);
+    },
+  },
 };
 
 export default meta;
