@@ -12,6 +12,21 @@ const meta: Meta<typeof Switch> = {
       alert(`event.timestamp: ${event.timeStamp} event.type: ${event.type}`);
     },
   },
+  argTypes: {
+    color: {
+      control: { type: 'radio' },
+      options: ['primary', 'success', 'warning', 'danger'],
+    },
+    checked: {
+      control: { type: 'boolean' },
+    },
+    defaultChecked: {
+      control: { type: 'boolean' },
+    },
+    disabled: {
+      control: { type: 'boolean' },
+    },
+  },
 };
 
 export default meta;
