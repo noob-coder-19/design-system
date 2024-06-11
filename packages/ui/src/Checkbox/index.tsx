@@ -21,6 +21,13 @@ const DivStyled = styled.div<DivSyledProps>`
   &[aria-checked='true'] {
     color: ${(props) => tokens.colors[props.color || 'primary'][500].value};
   }
+
+  &[disabled] {
+    pointer-events: none;
+    opacity: 0.4;
+    background-color: transparent;
+    color: ${tokens.colors.neutral[400].value};
+  }
 `;
 
 const Checkbox = forwardRef<HTMLInputElement, CheckboxProps>(
