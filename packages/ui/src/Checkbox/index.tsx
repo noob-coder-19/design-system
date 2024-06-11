@@ -18,6 +18,11 @@ const DivStyled = styled.div<DivSyledProps>`
       tokens.colors[props.color || 'primary'][100].value};
   }
 
+  &:active {
+    background-color: ${(props) =>
+      tokens.colors[props.color || 'primary'][200].value};
+  }
+
   &[aria-checked='true'] {
     color: ${(props) => tokens.colors[props.color || 'primary'][500].value};
   }
