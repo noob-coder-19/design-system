@@ -10,6 +10,8 @@ const DivStyled = styled.div<DivSyledProps>`
   cursor: pointer;
 
   padding: 0.25rem;
+  border-radius: 50%;
+  transition: ${tokens.animations.default.value};
 
   &:hover {
     background-color: ${(props) =>
