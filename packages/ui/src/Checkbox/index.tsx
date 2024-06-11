@@ -11,6 +11,11 @@ const DivStyled = styled.div<DivSyledProps>`
 
   padding: 0.25rem;
 
+  &:hover {
+    background-color: ${(props) =>
+      tokens.colors[props.color || 'primary'][100].value};
+  }
+
   &[aria-checked='true'] {
     color: ${(props) => tokens.colors[props.color || 'primary'][500].value};
   }
