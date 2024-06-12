@@ -8,6 +8,9 @@ import type CheckboxProps from './types';
 
 const DivStyled = styled.div<DivSyledProps>`
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   padding: 0.25rem;
   border-radius: 50%;
