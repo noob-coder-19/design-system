@@ -17,3 +17,35 @@ type Story = StoryObj<typeof Checkbox>;
 export const Default: Story = {
   args: {},
 };
+
+export const Inaccessibile: Story = {
+  args: {
+    'aria-label': undefined,
+  },
+};
+
+export const CustomColor: Story = {
+  args: {
+    color: 'success',
+  },
+};
+
+export const CustomSize: Story = {
+  args: {
+    size: '3rem',
+  },
+};
+
+export const DefaultChecked: Story = {
+  args: {
+    'aria-label': 'checkbox',
+    defaultChecked: true,
+  },
+};
+
+export const DefaultUnchecked: Story = {
+  args: {
+    'aria-label': 'checkbox',
+    defaultChecked: false,
+  },
+};
