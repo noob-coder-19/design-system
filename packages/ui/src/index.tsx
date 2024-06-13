@@ -9,3 +9,6 @@ export type { default as SwitchProps } from './Switch/types';
 
 export { default as Checkbox } from './Checkbox/index';
 export type { default as CheckboxProps } from './Checkbox/types';
+
+export { default as Loading } from './Loading/index';
+export type { default as LoadingProps } from './Loading/types';
