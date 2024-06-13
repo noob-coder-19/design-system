@@ -58,7 +58,7 @@ const Checkbox = forwardRef<HTMLInputElement, CheckboxProps>(
       props.checked || defaultChecked || false,
     );
 
-    const toggleChecked = (seed?: boolean) => {
+    const toggleChecked = (seed?: boolean): void => {
       if (seed === undefined) {
         setChecked((oldChecked) => !oldChecked);
         return;
@@ -75,7 +75,7 @@ const Checkbox = forwardRef<HTMLInputElement, CheckboxProps>(
       }
     };
 
-    const handleToggleChecked = (seed?: boolean) => {
+    const handleToggleChecked = (seed?: boolean): void => {
       if (disabled) {
         return;
       }
@@ -96,7 +96,10 @@ const Checkbox = forwardRef<HTMLInputElement, CheckboxProps>(
       }
     };
 
-    useImperativeHandle(ref, () => inputRef.current!);
+    useImperativeHandle<HTMLInputElement | null, HTMLInputElement | null>(
+      ref,
+      () => inputRef.current,
+    );
 
     return (
       <>
