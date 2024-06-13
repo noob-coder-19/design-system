@@ -49,3 +49,33 @@ export const DefaultUnchecked: Story = {
     defaultChecked: false,
   },
 };
+
+export const DisabledUnchecked: Story = {
+  args: {
+    'aria-label': 'checkbox',
+    defaultChecked: false,
+    disabled: true,
+  },
+};
+
+export const DisabledChecked: Story = {
+  args: {
+    'aria-label': 'checkbox',
+    defaultChecked: true,
+    disabled: true,
+  },
+};
+
+export const ControlledUnchecked: Story = {
+  args: {
+    'aria-label': 'checkbox',
+    checked: false,
+  },
+};
+
+export const ControlledChecked: Story = {
+  args: {
+    'aria-label': 'checkbox',
+    checked: true,
+  },
+};
