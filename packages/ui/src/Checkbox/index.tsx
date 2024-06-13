@@ -12,6 +12,9 @@ const DivStyled = styled.div<DivSyledProps>`
   align-items: center;
   justify-content: center;
 
+  width: ${(props) => props.size};
+  height: ${(props) => props.size};
+
   padding: 0.25rem;
   border-radius: 50%;
   transition: ${tokens.animations.default.value};
@@ -55,13 +58,13 @@ const Checkbox = forwardRef<HTMLInputElement, CheckboxProps>(
       props.checked || defaultChecked || false,
     );
 
-    const toggleChecked = (checked?: boolean) => {
-      if (checked === undefined) {
-        setChecked((old_checked) => !old_checked);
+    const toggleChecked = (seed?: boolean) => {
+      if (seed === undefined) {
+        setChecked((oldChecked) => !oldChecked);
         return;
       }
 
-      setChecked(checked);
+      setChecked(seed);
     };
 
     const inputRefOnChange = (
@@ -72,7 +75,7 @@ const Checkbox = forwardRef<HTMLInputElement, CheckboxProps>(
       }
     };
 
-    const handleToggleChecked = (checked?: boolean) => {
+    const handleToggleChecked = (seed?: boolean) => {
       if (disabled) {
         return;
       }
@@ -81,9 +84,7 @@ const Checkbox = forwardRef<HTMLInputElement, CheckboxProps>(
         inputRef.current.click();
       }
 
-      if (props.checked === undefined) {
-        toggleChecked(props.checked === undefined ? checked : props.checked);
-      }
+      toggleChecked(props.checked === undefined ? seed : props.checked);
     };
 
     const handleKeyDown = (
@@ -109,6 +110,7 @@ const Checkbox = forwardRef<HTMLInputElement, CheckboxProps>(
           }}
           onKeyDown={handleKeyDown}
           role="checkbox"
+          size={size}
           tabIndex={0}
           {...props}
         >
