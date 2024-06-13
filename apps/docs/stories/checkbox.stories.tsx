@@ -3,6 +3,31 @@ import type { Meta, StoryObj } from '@storybook/react';
 
 const meta: Meta<typeof Checkbox> = {
   component: Checkbox,
+  args: {
+    'aria-label': 'Checkbox',
+    onChange: (event) => {
+      // Handle the click event appropriately
+      // eslint-disable-next-line no-alert -- This is just an example of how you might handle the event
+      alert(
+        `Checked: ${event.target.checked} event.timestamp: ${event.timeStamp} event.type: ${event.type}`,
+      );
+    },
+  },
+  argTypes: {
+    color: {
+      control: { type: 'radio' },
+      options: ['primary', 'success', 'warning', 'danger'],
+    },
+    checked: {
+      control: { type: 'boolean' },
+    },
+    defaultChecked: {
+      control: { type: 'boolean' },
+    },
+    disabled: {
+      control: { type: 'boolean' },
+    },
+  },
 };
 
 export default meta;
@@ -38,21 +63,18 @@ export const CustomSize: Story = {
 
 export const DefaultChecked: Story = {
   args: {
-    'aria-label': 'checkbox',
     defaultChecked: true,
   },
 };
 
 export const DefaultUnchecked: Story = {
   args: {
-    'aria-label': 'checkbox',
     defaultChecked: false,
   },
 };
 
 export const DisabledUnchecked: Story = {
   args: {
-    'aria-label': 'checkbox',
     defaultChecked: false,
     disabled: true,
   },
@@ -60,7 +82,6 @@ export const DisabledUnchecked: Story = {
 
 export const DisabledChecked: Story = {
   args: {
-    'aria-label': 'checkbox',
     defaultChecked: true,
     disabled: true,
   },
@@ -68,14 +89,12 @@ export const DisabledChecked: Story = {
 
 export const ControlledUnchecked: Story = {
   args: {
-    'aria-label': 'checkbox',
     checked: false,
   },
 };
 
 export const ControlledChecked: Story = {
   args: {
-    'aria-label': 'checkbox',
     checked: true,
   },
 };
