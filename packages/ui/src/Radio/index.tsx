@@ -12,6 +12,9 @@ const DivStyled = styled.div<DivStyledProps>`
   align-items: center;
   justify-content: center;
 
+  width: ${(props) => props.size};
+  height: ${(props) => props.size};
+
   border-radius: 50%;
   padding: 0.25rem;
 
@@ -112,6 +115,7 @@ const Radio = forwardRef<HTMLInputElement, RadioProps>(
           }}
           onKeyDown={handleKeyDown}
           role="radio"
+          size={size}
           tabIndex={0}
           {...props}
         >
