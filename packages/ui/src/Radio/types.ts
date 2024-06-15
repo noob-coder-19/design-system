@@ -1,0 +1,13 @@
+import type tokens from '@noobcoder19/foundation';
+
+export interface DivStyledProps {
+  color?: keyof typeof tokens.colors;
+  disabled?: boolean;
+  checked?: boolean;
+}
+
+export default interface RadioProps
+  extends Omit<React.HTMLAttributes<HTMLInputElement>, 'color'>,
+    DivStyledProps {
+  size?: string;
+}
