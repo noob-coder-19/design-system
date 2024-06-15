@@ -27,3 +27,15 @@ export const Checked: Story = {
     defaultChecked: true,
   },
 };
+
+export const CustomColor: Story = {
+  args: {
+    color: 'danger',
+  },
+};
+
+export const CustomSize: Story = {
+  args: {
+    size: '3rem',
+  },
+};
