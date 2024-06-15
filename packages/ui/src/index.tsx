@@ -12,3 +12,6 @@ export type { default as CheckboxProps } from './Checkbox/types';
 
 export { default as Loading } from './Loading/index';
 export type { default as LoadingProps } from './Loading/types';
+
+export { default as Radio } from './Radio/index';
+export type { default as RadioProps } from './Radio/types';
