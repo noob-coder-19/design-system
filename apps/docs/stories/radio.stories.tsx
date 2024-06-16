@@ -52,3 +52,15 @@ export const DisabledChecked: Story = {
     checked: true,
   },
 };
+
+export const ControlledChecked: Story = {
+  args: {
+    checked: true,
+  },
+};
+
+export const ControlledUnchecked: Story = {
+  args: {
+    checked: false,
+  },
+};
