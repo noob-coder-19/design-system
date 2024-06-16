@@ -5,6 +5,13 @@ const meta: Meta<typeof Radio> = {
   component: Radio,
   args: {
     'aria-label': 'radio',
+    onChange: (event) => {
+      // Handle the click event appropriately
+      // eslint-disable-next-line no-alert -- This is just an example of how you might handle the event
+      alert(
+        `event.timestamp: ${event.timeStamp} event.type: ${event.type} Checked: ${event.currentTarget.checked}`,
+      );
+    },
   },
 };
 
