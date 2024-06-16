@@ -39,3 +39,16 @@ export const CustomSize: Story = {
     size: '3rem',
   },
 };
+
+export const Disabled: Story = {
+  args: {
+    disabled: true,
+  },
+};
+
+export const DisabledChecked: Story = {
+  args: {
+    disabled: true,
+    checked: true,
+  },
+};
