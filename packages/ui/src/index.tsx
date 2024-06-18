@@ -18,3 +18,6 @@ export type { default as RadioProps } from './Radio/types';
 
 export { default as Divider } from './Divider/index';
 export type { default as DividerProps } from './Divider/types';
+
+export { default as Portal } from './Portal/index';
+export type { default as PortalProps } from './Portal/types';
