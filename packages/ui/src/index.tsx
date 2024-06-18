@@ -15,3 +15,6 @@ export type { default as LoadingProps } from './Loading/types';
 
 export { default as Radio } from './Radio/index';
 export type { default as RadioProps } from './Radio/types';
+
+export { default as Divider } from './Divider/index';
+export type { default as DividerProps } from './Divider/types';
