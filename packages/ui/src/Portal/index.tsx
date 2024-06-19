@@ -1,5 +1,5 @@
 import { useEffect, useRef } from 'react';
-import ReactDOM from 'react-dom';
+import { createPortal } from 'react-dom';
 import type PortalProps from './types';
 
 const Portal: React.FC<PortalProps> = ({ children }) => {
@@ -13,7 +13,7 @@ const Portal: React.FC<PortalProps> = ({ children }) => {
     };
   }, []);
 
-  return ReactDOM.createPortal(children, el.current);
+  return createPortal(children, el.current);
 };
 
 export default Portal;
