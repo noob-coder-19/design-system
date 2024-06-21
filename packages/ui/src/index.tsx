@@ -24,3 +24,6 @@ export type { default as PortalProps } from './Portal/types';
 
 export { default as Alert } from './Alert/index';
 export type { default as AlertProps } from './Alert/types';
+
+export { default as Chip } from './Chip/index';
+export type { default as ChipProps } from './Chip/types';
