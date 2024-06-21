@@ -21,3 +21,6 @@ export type { default as DividerProps } from './Divider/types';
 
 export { default as Portal } from './Portal/index';
 export type { default as PortalProps } from './Portal/types';
+
+export { default as Alert } from './Alert/index';
+export type { default as AlertProps } from './Alert/types';
