@@ -37,6 +37,15 @@ const DivStyled = styled.div<ChipProps>`
   }
 `;
 
+const ButtonStyled = styled.button`
+  all: unset;
+
+  display: inline-flex;
+  align-items: center;
+
+  cursor: pointer;
+`;
+
 const Chip = forwardRef<HTMLDivElement, ChipProps>(
   (
     {
@@ -76,11 +85,17 @@ const Chip = forwardRef<HTMLDivElement, ChipProps>(
 
     return (
       <DivStyled color={color} ref={ref} {...props}>
-        {isDraggable ? <button>{dragIcon}</button> : null}
+        {isDraggable ? (
+          <ButtonStyled type="button">{dragIcon}</ButtonStyled>
+        ) : null}
 
         <span>{children}</span>
 
-        {clearable ? <button onClick={onClear}>{clearIcon}</button> : null}
+        {clearable ? (
+          <ButtonStyled onClick={onClear} type="button">
+            {clearIcon}
+          </ButtonStyled>
+        ) : null}
       </DivStyled>
     );
   },
