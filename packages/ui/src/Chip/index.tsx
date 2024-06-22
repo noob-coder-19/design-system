@@ -62,8 +62,9 @@ const Chip = forwardRef<HTMLDivElement, ChipProps>(
     },
     ref,
   ) => {
+    let localClearIcon = clearIcon;
     if (clearable && !clearIcon) {
-      clearIcon = (
+      localClearIcon = (
         <ClearIcon
           height={tokens.spacings[20].value}
           width={tokens.spacings[20].value}
@@ -72,8 +73,9 @@ const Chip = forwardRef<HTMLDivElement, ChipProps>(
       );
     }
 
+    let localDragIcon = dragIcon;
     if (isDraggable && !dragIcon) {
-      dragIcon = (
+      localDragIcon = (
         <DragIcon
           height={tokens.spacings[20].value}
           width={tokens.spacings[20].value}
@@ -86,14 +88,14 @@ const Chip = forwardRef<HTMLDivElement, ChipProps>(
     return (
       <DivStyled color={color} ref={ref} {...props}>
         {isDraggable ? (
-          <ButtonStyled type="button">{dragIcon}</ButtonStyled>
+          <ButtonStyled type="button">{localDragIcon}</ButtonStyled>
         ) : null}
 
         <span>{children}</span>
 
         {clearable ? (
           <ButtonStyled onClick={onClear} type="button">
-            {clearIcon}
+            {localClearIcon}
           </ButtonStyled>
         ) : null}
       </DivStyled>
