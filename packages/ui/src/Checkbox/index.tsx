@@ -3,10 +3,10 @@ import tokens from '@noobcoder19/foundation';
 import { forwardRef, useImperativeHandle, useRef, useState } from 'react';
 import CheckedIcon from '../common/Icons/checked-icon';
 import UncheckedIcon from '../common/Icons/unchecked-icon';
-import type { DivSyledProps } from './types';
+import type { DivProps } from './types';
 import type CheckboxProps from './types';
 
-const DivStyled = styled.div<DivSyledProps>`
+const DivStyled = styled.div<DivProps>`
   cursor: pointer;
   display: flex;
   align-items: center;

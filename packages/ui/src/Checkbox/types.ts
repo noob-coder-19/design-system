@@ -12,3 +12,7 @@ export default interface CheckboxProps
   checked?: boolean;
   onChange?: (event: React.ChangeEvent<HTMLInputElement>) => void;
 }
+
+export interface DivProps
+  extends Omit<React.HTMLAttributes<HTMLDivElement>, 'color'>,
+    DivSyledProps {}
