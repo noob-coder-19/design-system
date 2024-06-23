@@ -3,10 +3,10 @@ import tokens from '@noobcoder19/foundation';
 import { forwardRef, useImperativeHandle, useRef, useState } from 'react';
 import RadioOnFillIcon from '../common/Icons/radio-on-icon';
 import RadioOffFillIcon from '../common/Icons/radio-off-icon';
-import type { DivStyledProps } from './types';
+import type { DivProps } from './types';
 import type RadioProps from './types';
 
-const DivStyled = styled.div<DivStyledProps>`
+const DivStyled = styled.div<DivProps>`
   cursor: pointer;
   display: flex;
   align-items: center;

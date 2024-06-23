@@ -10,3 +10,7 @@ export interface DivStyledProps {
 export default interface RadioProps
   extends Omit<React.HTMLAttributes<HTMLInputElement>, 'color'>,
     DivStyledProps {}
+
+export interface DivProps
+  extends Omit<React.HTMLAttributes<HTMLDivElement>, 'color'>,
+    DivStyledProps {}
