@@ -27,3 +27,6 @@ export type { default as AlertProps } from './Alert/types';
 
 export { default as Chip } from './Chip/index';
 export type { default as ChipProps } from './Chip/types';
+
+export { default as Pagination } from './Pagination/index';
+export type { default as PaginationProps } from './Pagination/types';
