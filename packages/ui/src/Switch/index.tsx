@@ -1,5 +1,6 @@
 import { styled } from 'styled-components';
 import tokens from '@noobcoder19/foundation';
+import type { InputHTMLAttributes } from 'react';
 import { forwardRef, useRef, useState } from 'react';
 import type SwitchProps from './types';
 import type { SpanStyledProps } from './types';
@@ -16,7 +17,7 @@ const DivStyled = styled.div`
   }
 `;
 
-const InputStyled = styled.input`
+const InputStyled = styled.input<InputHTMLAttributes<HTMLInputElement>>`
   opacity: 0;
   width: 0;
   height: 0;
