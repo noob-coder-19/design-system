@@ -17,3 +17,7 @@ export default interface PaginationProps
   totalPages: number;
   onChange?: (event: React.MouseEvent<HTMLButtonElement>, page: number) => void;
 }
+
+export interface DivProps
+  extends Omit<React.HTMLAttributes<HTMLDivElement>, 'color'>,
+    StyledDivProps {}

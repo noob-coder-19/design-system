@@ -3,10 +3,10 @@ import { forwardRef } from 'react';
 import { styled } from 'styled-components';
 import RightArrowIcon from '../common/Icons/right-arrow';
 import LeftArrowIcon from '../common/Icons/left-arrow';
-import type { IconContainerProps, StyledDivProps } from './types';
+import type { DivProps, IconContainerProps } from './types';
 import type PaginationProps from './types';
 
-const DivStyled = styled.div<StyledDivProps>`
+const DivStyled = styled.div<DivProps>`
   display: flex;
   align-items: center;
   justify-content: center;
