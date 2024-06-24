@@ -33,3 +33,36 @@ export const LastPage: Story = {
     page: 10,
   },
 };
+
+export const CustomColor: Story = {
+  args: {
+    color: 'success',
+  },
+};
+
+export const CustomOnChange: Story = {
+  args: {
+    page: 5,
+    onChange: (event, page) => {
+      // eslint-disable-next-line no-alert -- alert is used in story
+      alert(`You're going to page ${page}`);
+    },
+  },
+};
+
+export const CustomIconContainer: Story = {
+  args: {
+    page: 5,
+    onChange: (event, page) => {
+      // eslint-disable-next-line no-alert -- alert is used in story
+      alert(`You're going to page ${page}`);
+    },
+    iconContainerProps: {
+      style: {
+        height: '2rem',
+        width: '2rem',
+        color: 'darkgreen',
+      },
+    },
+  },
+};
