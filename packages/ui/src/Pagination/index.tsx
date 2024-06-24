@@ -75,6 +75,7 @@ const Pagination = forwardRef<HTMLDivElement, PaginationProps>(
               onChange(event, page - 1);
             }
           }}
+          type="button"
         >
           <ScreenReaderOnly>Previous Page</ScreenReaderOnly>
           <IconContainer {...iconContainerProps} color={color}>
@@ -94,6 +95,7 @@ const Pagination = forwardRef<HTMLDivElement, PaginationProps>(
               onChange(event, page + 1);
             }
           }}
+          type="button"
         >
           <ScreenReaderOnly>Next Page</ScreenReaderOnly>
           <IconContainer {...iconContainerProps} color={color}>
