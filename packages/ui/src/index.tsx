@@ -30,3 +30,6 @@ export type { default as ChipProps } from './Chip/types';
 
 export { default as Pagination } from './Pagination/index';
 export type { default as PaginationProps } from './Pagination/types';
+
+export { default as Paper } from './Paper/index';
+export type { default as PaperProps } from './Paper/types';
