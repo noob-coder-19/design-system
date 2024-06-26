@@ -33,3 +33,6 @@ export type { default as PaginationProps } from './Pagination/types';
 
 export { default as Paper } from './Paper/index';
 export type { default as PaperProps } from './Paper/types';
+
+export { default as Select } from './Select/index';
+export type { default as SelectProps } from './Select/types';
