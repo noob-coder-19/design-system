@@ -36,3 +36,6 @@ export type { default as PaperProps } from './Paper/types';
 
 export { default as Select } from './Select/index';
 export type { default as SelectProps } from './Select/types';
+
+export { default as TextField } from './Textfield/index';
+export type { default as TextFieldProps } from './Textfield/types';
