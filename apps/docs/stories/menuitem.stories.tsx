@@ -15,6 +15,9 @@ const meta: Meta<typeof MenuItem> = {
       control: { type: 'radio' },
       options: ['primary', 'success', 'warning', 'danger'],
     },
+    disabled: {
+      control: { type: 'boolean' },
+    },
   },
   decorators: [
     (Story) => {
@@ -111,5 +114,16 @@ export const WithStartAndEndIcon: Story = {
         />
       </svg>
     ),
+  },
+};
+
+export const CustomClick: Story = {
+  args: {
+    onClick: (event) => {
+      // eslint-disable-next-line no-alert -- This is a demo
+      alert(
+        `Click event: ${event.currentTarget.clientWidth} x ${event.currentTarget.clientHeight}`,
+      );
+    },
   },
 };
