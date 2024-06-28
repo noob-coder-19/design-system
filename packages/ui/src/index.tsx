@@ -39,3 +39,6 @@ export type { default as SelectProps } from './Select/types';
 
 export { default as TextField } from './Textfield/index';
 export type { default as TextFieldProps } from './Textfield/types';
+
+export { default as MenuItem } from './MenuItem/index';
+export type { default as MenuItemProps } from './MenuItem/types';
