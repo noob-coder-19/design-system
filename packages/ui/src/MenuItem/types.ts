@@ -1,6 +1,6 @@
 import type tokens from '@noobcoder19/foundation';
 
-export interface LiStyledProps {
+interface LiProps {
   /**
    * The color of the MenuItem
    * @defaultValue primary
@@ -8,9 +8,13 @@ export interface LiStyledProps {
   color?: keyof typeof tokens.colors;
 }
 
+export interface LiStyledProps
+  extends Omit<React.HTMLAttributes<HTMLLIElement>, 'color'>,
+    LiProps {}
+
 export default interface MenuItemProps
   extends Omit<React.HTMLAttributes<HTMLLIElement>, 'color'>,
-    LiStyledProps {
+    LiProps {
   /**
    * The icon to display at the start of the MenuItem.
    */
