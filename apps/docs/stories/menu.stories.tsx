@@ -26,7 +26,7 @@ export default meta;
 
 type Story = StoryObj<typeof Menu>;
 
-const Template1 = (args: Story['args']) => {
+function Template1(args: Story['args']): JSX.Element {
   const [anchorEl, setAnchorEl] = useState<HTMLElement | null>(null);
   const ref = useRef<HTMLButtonElement>(null);
 
@@ -50,17 +50,17 @@ const Template1 = (args: Story['args']) => {
           border: '1px solid black',
         }}
       >
-        <Button ref={ref} onClick={handleClick}>
+        <Button onClick={handleClick} ref={ref}>
           Click Me!
         </Button>
       </div>
 
       <Menu
         anchorEl={anchorEl}
-        open={Boolean(anchorEl)}
         onClose={() => {
           setAnchorEl(null);
         }}
+        open={Boolean(anchorEl)}
         {...args}
       >
         <MenuItem>Item 1</MenuItem>
@@ -70,11 +70,11 @@ const Template1 = (args: Story['args']) => {
       </Menu>
     </>
   );
-};
+}
 
 export const TopLeft = Template1.bind({});
 
-const Template2 = (args: Story['args']) => {
+function Template2(args: Story['args']): JSX.Element {
   const [anchorEl, setAnchorEl] = useState<HTMLElement | null>(null);
   const ref = useRef<HTMLButtonElement>(null);
 
@@ -98,17 +98,17 @@ const Template2 = (args: Story['args']) => {
           border: '1px solid black',
         }}
       >
-        <Button ref={ref} onClick={handleClick}>
+        <Button onClick={handleClick} ref={ref}>
           Click Me!
         </Button>
       </div>
 
       <Menu
         anchorEl={anchorEl}
-        open={Boolean(anchorEl)}
         onClose={() => {
           setAnchorEl(null);
         }}
+        open={Boolean(anchorEl)}
         {...args}
       >
         <MenuItem>Item 1</MenuItem>
@@ -118,11 +118,11 @@ const Template2 = (args: Story['args']) => {
       </Menu>
     </>
   );
-};
+}
 
 export const CenterCenter = Template2.bind({});
 
-const Template3 = (args: Story['args']) => {
+function Template3(args: Story['args']): JSX.Element {
   const [anchorEl, setAnchorEl] = useState<HTMLElement | null>(null);
   const ref = useRef<HTMLButtonElement>(null);
 
@@ -146,17 +146,17 @@ const Template3 = (args: Story['args']) => {
           border: '1px solid black',
         }}
       >
-        <Button ref={ref} onClick={handleClick}>
+        <Button onClick={handleClick} ref={ref}>
           Click Me!
         </Button>
       </div>
 
       <Menu
         anchorEl={anchorEl}
-        open={Boolean(anchorEl)}
         onClose={() => {
           setAnchorEl(null);
         }}
+        open={Boolean(anchorEl)}
         {...args}
       >
         <MenuItem>Item 1</MenuItem>
@@ -166,6 +166,6 @@ const Template3 = (args: Story['args']) => {
       </Menu>
     </>
   );
-};
+}
 
 export const BottomRight = Template3.bind({});
