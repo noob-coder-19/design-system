@@ -42,3 +42,6 @@ export type { default as TextFieldProps } from './Textfield/types';
 
 export { default as MenuItem } from './MenuItem/index';
 export type { default as MenuItemProps } from './MenuItem/types';
+
+export { default as Menu } from './Menu/index';
+export type { default as MenuProps } from './Menu/types';
