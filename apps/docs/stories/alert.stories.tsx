@@ -111,6 +111,10 @@ Action.args = {
   duration: 3000,
   alertAction: (
     <button
+      onClick={() => {
+        // eslint-disable-next-line no-alert -- alert is used for demo purposes
+        alert('Undo clicked');
+      }}
       style={{
         backgroundColor: 'transparent',
         appearance: 'none',
@@ -118,9 +122,6 @@ Action.args = {
         color: 'white',
       }}
       type="button"
-      onClick={() => {
-        alert('Undo clicked');
-      }}
     >
       Undo
     </button>
