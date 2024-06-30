@@ -45,3 +45,6 @@ export type { default as MenuItemProps } from './MenuItem/types';
 
 export { default as Menu } from './Menu/index';
 export type { default as MenuProps } from './Menu/types';
+
+export { default as Accordion } from './Accordion/index';
+export type { default as AccordionProps } from './Accordion/types';
