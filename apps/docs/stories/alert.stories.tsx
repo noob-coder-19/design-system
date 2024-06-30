@@ -1,7 +1,7 @@
 import type { AlertProps } from '@noobcoder19/design-system';
 import { Alert } from '@noobcoder19/design-system';
 import type { Meta, StoryFn, StoryObj } from '@storybook/react';
-import React from 'react';
+import { useState } from 'react';
 
 const meta: Meta<typeof Alert> = {
   component: Alert,
@@ -11,8 +11,9 @@ export default meta;
 
 type Story = StoryObj<typeof Alert>;
 
+// eslint-disable-next-line react/function-component-definition -- Storybook requires StoryFn return type to be a function
 const Template: StoryFn<AlertProps> = (args) => {
-  const [visible, setVisible] = React.useState<boolean>(true);
+  const [visible, setVisible] = useState<boolean>(true);
 
   return (
     <>
