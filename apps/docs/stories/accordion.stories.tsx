@@ -76,7 +76,8 @@ export const WithOnChange: Story = {
   args: {
     expanded: false,
     onChange: (event: React.MouseEvent<HTMLDivElement>, expanded: boolean) => {
-      console.log('Expanded:', expanded);
+      // eslint-disable-next-line no-alert -- alert is used for demo purposes
+      alert(`Expanded: ${expanded}`);
     },
   },
 };
