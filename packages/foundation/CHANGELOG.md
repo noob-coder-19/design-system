@@ -1,5 +1,11 @@
 # @noobcoder19/foundation
 
+## 2.0.0
+
+### Major Changes
+
+- 54ae8d6: Fixed builds
+
 ## 1.0.0
 
 ### Major Changes
